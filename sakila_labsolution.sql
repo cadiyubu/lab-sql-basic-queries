@@ -35,11 +35,11 @@ SELECT COUNT(DISTINCT staff_id) AS Num_employees FROM sakila.staff;
 
 -- 5.3 Determine how many films are available for rent and how many have been rented.
 -- 5.3 Number of films available for rent
-SELECT COUNT(DISTINCT inventory_id)
+SELECT COUNT(DISTINCT inventory_id) AS available_for_rent
 FROM sakila.inventory;
 
 -- 5.3 Number of files that have been rented
-SELECT COUNT(rental_id)
+SELECT COUNT(rental_id) AS rented
 FROM sakila.rental;
 
 -- 5.4 Determine the number of distinct last names of the actors in the database.
